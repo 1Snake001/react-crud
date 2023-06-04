@@ -1,11 +1,18 @@
-import './style/App.scss';
+import "./style/App.scss";
+import services from "./services/services";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
+   const [users, setUsers] = useState([]);
 
-    </div>
-  );
+  let response = services.getData();
+  useEffect(()=> {
+    response.then((usersData) => {
+      setUsers(usersData)
+    });
+  },[])
+
+  return <div className="App"></div>;
 }
 
 export default App;
