@@ -1,4 +1,4 @@
-
+$red:     #dc3545;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .App {
@@ -15,4 +15,9 @@
 
 form{
   margin-top:40px;
+}
+
+
+.error{
+  border: 1px solid $red;
 }
