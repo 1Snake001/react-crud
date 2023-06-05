@@ -5,7 +5,6 @@ function UserTable({
   users,
   deletUserHandler,
   setUser,
-  inputValues,
   setInputValues,
 }) {
   const navigate = useNavigate();
