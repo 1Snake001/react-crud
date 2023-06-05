@@ -51,7 +51,7 @@ class Services {
         mode: "cors",
         method: "DELETE",
       };
-      const respons = await fetch(this.url`${id}`, fetchOptions);
+      const respons = await fetch(`${this.url}${id}`, fetchOptions);
 
       if (respons.ok) {
         const data = await respons.json();
@@ -73,7 +73,7 @@ class Services {
         },
         body: JSON.stringify(updatedData),
       };
-      const respons = await fetch(this.url`${id}`, fetchOptions);
+      const respons = await fetch(`${this.url}${id}`, fetchOptions);
 
       if (respons.ok) {
         const data = await respons.json();
